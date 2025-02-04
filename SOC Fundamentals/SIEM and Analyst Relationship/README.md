@@ -20,7 +20,7 @@ You can view newly created alerts in the "Main Channel" and think of this channe
 
 When you click on the alert, you can see the details of the alert. This allows you to gather the information (hostname, IP address, file hash information, etc.) required to investigate.
 
-> [!NOTE]
-> ## Questions
-> 1. When you close an alert, which channel can you access it from?<br>
->    **Answer: Closed Alerts**
+## Questions
+1. When you close an alert, which channel can you access it from?
+
+   `Answer: Closed Alerts`

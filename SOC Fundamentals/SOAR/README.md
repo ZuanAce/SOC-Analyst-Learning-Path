@@ -51,6 +51,13 @@ For example, let's say an attacker created a server on AWS (Amazon Web Services)
 
 2 months later, the attacker shut down the server and someone else moved their personal blog to that server. This doesn't mean that people who visited the blog were exposed to malicious content. The fact that this IP address has been used for malicious purposes in the past does not mean that it contains malicious content.
 
+## Common Mistakes made by SOC Analysts
+Like everyone else, SOC analysts can make mistakes. In this section, we will discuss common mistakes made by SOC analysts and how to avoid making them yourself.
+- Over-reliance on VirusTotal Results
+- Hasty Analysis of Malware in a Sandbox
+- Inadequate Log Analysis
+- Overlooking VirusTotal Dates
+
 ----
 
 ## Questions

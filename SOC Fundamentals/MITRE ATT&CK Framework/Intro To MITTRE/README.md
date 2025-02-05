@@ -52,6 +52,86 @@ Tactic expresses the purpose of the cyber attacker and the reason for his action
 
 ## Types of Tactics
 Tactics often consist of general statements as they express the purpose and reason for the cyber attack. Therefore, the tactics for each matrix are highly similar.
+
+## Enterprise Tactics
+There are 14 tactics in the Enterprise matrix as in the list below:
+- Reconnaissance
+- Resource Development
+- Initial Access
+- Execution
+- Persistence
+- Privilege Escalation
+- Defense Evasion
+- Credential Access
+- Discovery
+- Lateral Movement
+- Collection
+- Command and Control
+- Exfiltration
+- Impact
+
+## Mobile Tactics
+There are 14 tactics in the Mobile matrix as in the list below:
+- Initial Access
+- Execution
+- Persistence
+- Privilege Escalation
+- Defense Evasion
+- Credential Access
+- Discovery
+- Lateral Movement
+- Collection
+- Command and Control
+- Exfiltration
+- Impact
+- Network Effects
+- Remote Service Effects
+
+## ICS Tactics
+There are 12 tactics in the ICS matrix as in the list below:
+- Initial Access
+- Execution
+- Persistence
+- Privilege Escalation
+- Evasion
+- Discovery
+- Lateral Movement
+- Collection
+- Command and Control
+- Inhibit Response Function
+- Impair Process Control
+- Impact
+
+----
+
+# Techniques and Sub-Techniques
+## What are Techniques and Sub-Techniques?
+The tactics within the matrix only show what the attackers aim and do not contain detailed information about the attacker's attack method. The techniques and sub-techniques, on the other hand show the methods used by the attacker to achieve his goal and how he conducted the attack exactly. Each technique/sub-technique is included within the matrix depending on a particular tactic.
+
+## Types of Techniques and Sub-Techniques
+Techniques are divided into 3 groups according to matrices:
+- Enterprise Techniques
+- Mobile Techniques
+- ICS Techniques
+
+### Enterprise Techniques
+There are quite a number of enterprise techniques and are constantly updated over the time. The current number (05.02.2025) of enterprise techniques and sub-techniques is as follows:
+- Techniques: 203
+- Sub-techniques: 453
+
+### Mobile Techniques
+Total number of mobile techniques is less than the enterprise techniques and they are updated over the time as well. The current number (05.02.2025) of the mobile techniques and sub-techniques is as follows:
+- Techniques: 73
+- Sub-techniques: 46
+
+### ICS Techniques
+As with the techniques of other matrices, ICS techniques are also updated over the  time. The current number (05.02.2025) of ICS techniques and sub-techniques is as follows:
+- Techniques: 83
+- Sub-techniques: 0
+
+## What is Procedure?
+The procedure consists of usage examples of techniques/sub-techniques. It simply shows which tool/software was utilized during the implementation of the technique. In other words, it is the explanation of the practical information on the use of the technique.
+  
 ----
 
 ## Questions
@@ -66,6 +146,30 @@ Tactics often consist of general statements as they express the purpose and reas
 3. What is the matrix that contains the information about the cyber security of Android and iOS platforms?
 
    `Answer: Mobile`
+
+4. What is the ID of the "Lateral Movement" tactic in the Enterprise matrix?
+
+   `Answer: TA008`
+
+5. When was the "Persistence" tactic in the mobile matrix created?
+
+   `Answer: 17 October 2018`
+
+6. What is the name of the tactic in Enterprise, Mobile and ICS matrices which is under the techniques related to obtaining higher-level permission on the target system/network?
+
+   `Answer: Privilege Escalation`
+
+7. What is the name of the technique with the ID T1055 among the Enterprise techniques?
+
+   `Answer: Process Injection`
+
+ 8. Among the Enterprise techniques, which platform is the technique with the ID T1112 for?
+
+    `Answer: Windows`
+
+9. Under which tactic is the "Supply Chain Compromise" technique which is among the Enterprise techniques?
+
+    `Answer: Initial Access`
 
 
 

